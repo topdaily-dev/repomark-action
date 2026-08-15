@@ -1,0 +1,24 @@
+name: Repomark
+description: Check OSS repo health score in CI
+branding:
+  icon: check-circle
+  color: green
+inputs:
+  directory:
+    description: Directory to scan
+    required: false
+    default: .
+  min:
+    description: Minimum score (0-100)
+    required: false
+    default: "70"
+  version:
+    description: repomark package version to run
+    required: false
+    default: "0.2.0"
+runs:
+  using: composite
+  steps:
+    - name: Run repomark check
+      shell: bash
+      run: npx --yes "@topdaily-dev/repomark@${{ inputs.version }}" check "${{ inputs.directory }}" --min "${{ inputs.min }}"
