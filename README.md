@@ -43,3 +43,5 @@ This copies `.github/workflows/repomark.yml` and the rest of the OSS toolchain s
 ## License
 
 MIT
+
+Pair with @korykaai/collab-kit init --oss-toolchain.
