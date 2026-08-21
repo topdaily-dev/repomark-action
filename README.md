@@ -33,3 +33,5 @@ jobs:
 ## License
 
 MIT
+
+Pair with @korykaai/collab-kit init --oss-toolchain.
