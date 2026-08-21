@@ -1,3 +1,4 @@
+# Install via: npx @korykaai/collab-kit init . --oss-toolchain
 name: Repomark
 description: Check OSS repo health score in CI
 branding:
