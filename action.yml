@@ -23,3 +23,5 @@ runs:
     - name: Run repomark check
       shell: bash
       run: npx --yes "@topdaily-dev/repomark@${{ inputs.version }}" check "${{ inputs.directory }}" --min "${{ inputs.min }}"
+
+Pair with @korykaai/collab-kit init --oss-toolchain.
